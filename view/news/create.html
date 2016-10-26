@@ -1,0 +1,45 @@
+<div class="app-create-news">
+	<div class="main-inner">
+		<h2>发布消息</h2>
+		<form name="news_form" ng-submit="submitData()">
+			<div class="row">
+				<div class="col-lg-2">
+					<label for="news_title">消息标题：</label>
+				</div>
+				<div class="col-lg-6">
+					<input type="text" class="form-control" id="news_title" ng-model="news.newsTitle" name="newsTitle" placeholder="请输入消息的标题" ng-required="true">
+				</div>
+				<div class="col-lg-4">
+					<span class="text-danger" ng-show="news_form.newsTitle.$dirty && news_form.newsTitle.$invalid">请输入消息标题</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-2">
+					<label for="news_writer">消息发布者：</label>
+				</div>
+				<div class="col-lg-6">
+					<input type="text" class="form-control" id="news_writer" ng-model="news.newsWriter" name="newsWriter" placeholder="请输入消息发布者" ng-required="true">
+				</div>
+				<div class="col-lg-4">
+					<span class="text-danger" ng-show="news_form.newsWriter.$dirty && news_form.newsWriter.$invalid">请输入消息标题</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-2">
+					<label for="news_content">消息内容：</label>
+				</div>
+				<div class="col-lg-6">
+					<textarea class="form-control" id="news_content" ng-model="news.newsContent" name="newsContent" placeholder="请输入消息内容" ng-required="true"></textarea>
+				</div>
+				<div class="col-lg-4">
+					<span class="text-danger" ng-show="news_form.newsContent.$dirty && news_form.newsContent.$invalid">请输入消息内容</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-2">
+					<button type="submit" ng-disabled="news_form.$invalid" class="btn btn-success">提交</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

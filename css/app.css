@@ -1,0 +1,139 @@
+body {
+	background: #efefef;
+	font-family: "Microsoft Yahei";
+}
+.app {
+	display: none;
+}
+.header {
+	background: #fff;
+	height: 60px;
+	border-bottom: 1px solid #ccc;
+}
+.header img {
+	float: left;
+	margin-top: 7px;
+}
+.header h1 {
+	line-height: 60px;
+	margin: 0;
+	font-size: 26px;
+}
+.header .login{
+	float: right;
+	line-height: 60px;
+}
+.nav {
+	margin-top: 10px;
+	width: 240px;
+	background: #fff;
+	height: 600px;
+	float: left;
+}
+.main {
+	margin-top: 10px;
+	margin-left: 250px;
+	height: 600px;
+	background: #fff;
+}	
+/* ç™»å½•æ¨¡å—çš„æ ·å¼ */
+.whole-page {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #efefef;
+}
+.app-login {
+	background: url(../img/bg.jpg) no-repeat;
+}
+.app-login .login-container {
+	background: #fff;
+	width: 400px;
+	margin: 100px auto;
+	padding: 10px 20px;
+	border-radius: 15px;
+	box-shadow: 5px rgba(67, 123, 174, 0.5);
+}
+.app-login h2 {
+	color: #055eae;
+	height: 60px;
+	margin-top: 10px;
+	line-height: 60px;
+	border-bottom: 1px solid #ddd;
+	font-size: 24px;
+	text-align: center;
+}
+.app-login .form-group {
+	padding: 10px 0;
+	line-height: 30px;
+	margin-bottom: 0px;
+}
+.app-login label {
+	color: #055eae;
+	width: 100px;
+	display: inline-block;
+	text-align: right;
+}
+.app-login input {
+	width: 220px;
+	padding-left: 10px;
+	border-radius: 5px;
+	box-shadow: -2px -2px  #ddd;
+	border: 1px solid #ccc;
+	outline: medium;
+}
+.app-login button {
+	width: 300px;
+	margin: 0 auto;
+}
+.app-login .btn-container {
+	text-align: center;
+	padding-bottom: 20px;
+}
+.app-login .error-container {
+	height: 35px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    text-indent: 105px;
+    overflow: hidden;
+}
+.app-login .btn {
+	color: #fff;
+	background-color: #0272d6;
+}
+/* navåˆ—è¡¨æ ·å¼ */
+.nav li {
+	list-style: none;
+}
+.nav h3 {
+	font-size: 18px;
+}
+/*ä¸»ç•Œé¢æ ·å¼*/
+.app-main h2 {
+	padding: 30px;
+}
+/*åˆ›å»ºç”¨æˆ·ç•Œé¢æ ·å¼*/
+.main-inner {
+	padding: 10px 30px;
+}
+.main-inner h2 {
+	font-size: 28px;
+	border-bottom: 1px solid #efefef;
+	line-height: 60px;
+	margin-bottom: 40px;
+}
+.main-inner .row {
+	height: 60px;
+}
+.main-inner .col-lg-3 {
+	text-align: center;
+}
+.main-inner .btn {
+	margin-top: 20px;
+}
+.main-inner .news-list .col-lg-3,
+.main-inner .news-list .col-lg-2 {
+	text-align: center;
+}

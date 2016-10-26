@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>消息管理系统</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+<div ng-app="app" ng-style="{display: isShow}" class="app">
+	<header class="header">
+		<div class="container">
+			<div class="login">
+				<span>欢迎回来!&nbsp;</span>
+				<span class="text-info">{{username}}</span>
+				<span>|</span>
+				<a href="action/logout.php">退出登录</a>
+			</div>
+			<h1>&nbsp;&nbsp;消息管理系统</h1>
+		</div>
+	</header>
+	<!-- 列表容器 -->
+	<div class="nav" ng-controller="navCtrl">
+		<ul>
+			<li ng-repeat='item in list'>
+				<h3>{{item.title}}</h3>
+				<ul>
+					<li ng-repeat='childitem in item.childList'>
+						<a href="{{childitem.link}}">{{childitem.title}}</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- 主视图容器 -->
+	<div class="main" ng-view></div>
+</div>
+<script type="text/javascript" src="js/angular-1-4-1.js"></script>
+<script type="text/javascript" src="js/angular-route.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

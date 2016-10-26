@@ -1,0 +1,33 @@
+<div class="app-user-list">
+	<div class="main-inner clearfix">
+		<h2>成员列表</h2>
+		<div class="user-list"> 
+			<div class="row list-title">
+				<div class="col-sm-1">成员ID</div>
+				<div class="col-sm-2">成员名</div>
+				<div class="col-sm-2">性别</div>
+				<div class="col-sm-2">密码</div>
+				<div class="col-sm-2">电话</div>
+				<div class="col-sm-3">简介</div>
+			</div>
+			<div class="row" ng-repeat="item in list">
+				<div class="col-sm-1">
+					<a href="#/userdetail/{{item.id}}">{{item.id}}</a>
+				</div>
+				<div class="col-sm-2">
+					<a href="#/userdetail/{{item.id}}">{{item.username}}</a>
+				</div>
+				<div class="col-sm-2">{{item.sex}}</div>
+				<div class="col-sm-2">{{item.password}}</div>
+				<div class="col-sm-2">{{item.telephone}}</div>
+				<div class="col-sm-3">{{item.info}}</div>
+			</div>
+		</div>
+		<div class="pull-right">
+			<ul class="pagination">
+				<li><a href="#/userlist/{{num <= 1 ? 1 : num - 1}}">前一页</a></li>
+				<li><a href="#/userlist/{{+num + 1}}">后一页</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
